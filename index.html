@@ -9,9 +9,42 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-pbV8X0sYFJt+v5k7QK0a1X0K1VQk3GQp0I1q+Jq7xZ8s0q3zQG1V7yQ1KkQK1Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://soundcloud.com/musicas-sem-copyright1">
 
+    <style>
+        :root{
+          --cor-1:#6D28D9;
+          --cor-2:#06B6D4; 
+          --cor-3:#FF4D6D; 
+        }
+        html,body{font-family: 'Poppins'}
+  </style>
 </head>
-<body>
- 
+
+<body class="bg-gradient-to-br from-[#121212] via-[#0b1220] to-[#061025] text-[#e2e8f0] antialiased">
+
+  <header id="site-header" class="fixed w-full z-40 transition-all duration-300">
+    <nav class="max-w-6xl mx-auto flex items-center justify-between p-4 sm:p-6 rounded-b-2xl shadow-lg">
+      <a href="#" class="flex items-center gap-3">
+        <div class="w-10 h-10 flex items-center justify-center rounded-lg" style="background: linear-gradient(135deg,var(--cor-1),var(--cor-3));">
+          <i class="fa-solid fa-music"></i>
+        </div>
+        <span class="font-bold text-xl tracking-tight">Melodia</span>
+      </a>
+
+      <ul class="hidden md:flex items-center gap-6 text-sm">
+        <li><a href="#apresentacao" class="hover:text-[#fdf2fd]">Diferenciais</a></li>
+        <li><a href="#funcionalidades" class="hover:text-[#fdf2fd]">Funcionalidades</a></li>
+        <li><a href="#depoimentos" class="hover:text-[#fdf2fd]">Depoimentos</a></li>
+        <li><a href="#contato" class="hover:text-[#fdf2fd]">Contato</a></li>
+      </ul>
+
+      <div class="flex items-center gap-3">
+        <a href="#" class="hidden md:inline-block py-2 px-4 rounded-md font-medium text-sm" style="background: linear-gradient(90deg,var(--cor-2),var(--cor-1));">Baixar App</a>
+        <button id="menu-btn" class="md:hidden p-2 rounded-md bg-white/5"></button>
+      </div>
+    </nav>
+  </header>
+
+  
    
     
 </body>
