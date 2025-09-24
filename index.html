@@ -181,7 +181,7 @@
       </div>
     </section>
 
-    
+
     <section id="depoimentos" class="max-w-4xl mx-auto px-6 lg:px-8 py-12">
       <h2 class="text-2xl font-bold mb-6 text-center">O que nossos usuários dizem</h2>
 
@@ -221,6 +221,27 @@
       </div>
     </section>
    
+
+    <section id="contato" class="max-w-3xl mx-auto px-6 lg:px-8 py-12">
+      <h2 class="text-2xl font-bold mb-6 text-center">Fique por dentro — cadastre seu e-mail</h2>
+
+      <form id="lead-form" class="grid grid-cols-1 gap-4">
+        <input type="email" id="email" required placeholder="Seu melhor e-mail" class="p-4 rounded-lg bg-white/5 focus:ring-2 focus:ring-slate-500 outline-none" />
+        <div class="flex gap-3">
+          <input type="text" id="nome" placeholder="Seu nome (opcional)" class="p-4 rounded-lg bg-white/5 flex-1 outline-none" />
+          <select id="interesse" class="p-4 rounded-lg bg-white/5">
+            <option value="">Interesse</option>
+            <option>Novidades</option>
+            <option>Beta Tester</option>
+            <option>Parcerias</option>
+          </select>
+        </div>
+        <div class="flex items-center gap-4">
+          <button type="submit" class="py-3 px-6 rounded-lg font-semibold" style="background:linear-gradient(90deg,var(--cor-2),var(--cor-1));">Enviar</button>
+          <p id="form-msg" class="text-sm text-slate-400"></p>
+        </div>
+      </form>
+    </section>
 
     
 </body>
