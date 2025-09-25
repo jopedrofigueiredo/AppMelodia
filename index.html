@@ -77,11 +77,11 @@
           <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Melodia app" class="w-full h-80 object-cover">
         </div>
 
-        <div class="absolute bottom-6 left-6 p-4 rounded-xl bg-[#1d2027] shadow-md w-60">
+        <div class="absolute bottom-6 left-6 p-4 rounded-xl bg-[#FFFFFF0F] shadow-md w-60" style="backdrop-filter: blur(5px)">
           <div class="flex items-center justify-between">
             <div>
-              <h3 class="font-semibold">Now Playing</h3>
-              <p class="text-xs text-slate-300">Artista - Faixa Exemplo</p>
+              <h3 class="font-semibold">Escute Agora</h3>
+              <p class="text-xs text-slate-300">Volta pra mim - Sertanejo</p>
             </div>
             <div class="text-2xl">
               <i class="fa-solid fa-music"></i>
@@ -268,8 +268,8 @@
     const header = document.getElementById('site-header');
     window.addEventListener('scroll', () => {
       if(window.scrollY > 150){
-        header.style.backgroundColor = '#1d2027'
-        header.querySelector('nav').style.background = 'linear-gradient(90deg, rgba(6,182,212,0.08), rgba(109,40,217,0.06))';
+        header.classList.add('backdrop-blur-md');
+        header.querySelector('nav').style.background = 'linear-gradient(90deg, #06B6D414, #6D28D90F)';
       } else {
         header.querySelector('nav').style.background = '';
       }
