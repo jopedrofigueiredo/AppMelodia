@@ -6,7 +6,7 @@
     <title>App</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-pbV8X0sYFJt+v5k7QK0a1X0K1VQk3GQp0I1q+Jq7xZ8s0q3zQG1V7yQ1KkQK1Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
     <link href="https://soundcloud.com/musicas-sem-copyright1">
 
     <style>
@@ -58,16 +58,9 @@
         </div>
 
         <div class="flex flex-wrap gap-3 mt-2">
-          <span class="px-3 py-2 rounded-full bg-white/5 text-sm">Qualidade Wi‑Fi</span>
+          <span class="px-3 py-2 rounded-full bg-white/5 text-sm">Qualidade Hi‑Fi</span>
           <span class="px-3 py-2 rounded-full bg-white/5 text-sm">Playlists inteligentes</span>
           <span class="px-3 py-2 rounded-full bg-white/5 text-sm">Descubra artistas</span>
-        </div>
-
-        <div class="mt-6 text-sm text-slate-400">
-          <strong>Música de exemplo:</strong>
-          <a href="https://soundcloud.com/musicas-sem-copyright1" target="_blank" class="underline ml-2">SoundCloud - sem copyright</a>
-          <span class="mx-2">•</span>
-          <a href="https://freepd.com/" target="_blank" class="underline">FreePD</a>
         </div>
 
       </div>
@@ -134,7 +127,7 @@
         <div class="p-6 rounded-xl bg-gradient-to-r from-white/3 to-white/5 shadow-md">
           <div class="flex items-start gap-4">
             <div class="text-3xl p-3 rounded-lg" style="background:linear-gradient(135deg,var(--cor-1),var(--cor-2));">
-              <i class="fa-solid fa-equalizer"></i>
+              <i class="fa-solid fa-sliders"></i>
             </div>
             <div>
               <h3 class="font-semibold">Equalizador avançado</h3>
@@ -228,12 +221,14 @@
       <form id="lead-form" class="grid grid-cols-1 gap-4">
         <input type="email" id="email" required placeholder="Seu melhor e-mail" class="p-4 rounded-lg bg-white/5 focus:ring-2 focus:ring-slate-500 outline-none" />
         <div class="flex gap-3">
-          <input type="text" id="nome" placeholder="Seu nome (opcional)" class="p-4 rounded-lg bg-white/5 flex-1 outline-none" />
+          <input type="text" id="nome" placeholder="Seu nome" class="p-4 rounded-lg bg-white/5 flex-1 outline-none" />
           <select id="interesse" class="p-4 rounded-lg bg-white/5">
             <option value="">Interesse</option>
-            <option>Novidades</option>
-            <option>Beta Tester</option>
-            <option>Parcerias</option>
+            <option>Funk</option>
+            <option>Sertanejo</option>
+            <option>Pop internacional</option>
+            <option>Pagode</option>
+            <option>Outros</option>
           </select>
         </div>
         <div class="flex items-center gap-4">
