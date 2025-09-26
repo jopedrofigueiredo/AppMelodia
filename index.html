@@ -33,6 +33,7 @@
       <ul class="hidden md:flex items-center gap-6 text-sm">
         <li><a href="#apresentacao" class="hover:text-[#fdf2fd]">Diferenciais</a></li>
         <li><a href="#funcionalidades" class="hover:text-[#fdf2fd]">Funcionalidades</a></li>
+        <li><a href="#MusicasDoMomento" class="hover:text-[#fdf2fd]">músicas</a></li>
         <li><a href="#depoimentos" class="hover:text-[#fdf2fd]">Depoimentos</a></li>
         <li><a href="#contato" class="hover:text-[#fdf2fd]">Contato</a></li>
       </ul>
@@ -49,12 +50,12 @@
     <section class="max-w-6xl mx-auto px-6 lg:px-8 py-12 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
 
       <div class="space-y-6">
-        <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight">Melodia: <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-red-900" style="background:linear-gradient(90deg,var(--cor-3),var(--cor-2));">Sua Música, Sua Forma</span></h1>
+        <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight">Melodia: <span class="text-transparent bg-clip-text bg-gradient-to-r from-[var(--cor-3)] to-[var(--cor-2)]">Sua Música, Sua Forma</span></h1>
         <p class="text-slate-300 max-w-xl">Desfrute de áudio em alta fidelidade, crie playlists que combinam com seu humor, descubra talentos emergentes e controle tudo com uma interface intuitiva.</p>
 
         <div class="flex gap-4">
-          <a href="#" class="inline-flex items-center gap-3 py-3 px-6 rounded-lg font-semibold shadow-lg" style="background:linear-gradient(90deg,var(--cor-1),var(--cor-2));"> <i class="fa-solid fa-headphones-simple"></i> Ouvir Agora</a>
-          <button class="inline-flex items-center gap-3 py-3 px-6 rounded-lg bg-white/6"> <i class="fa-solid fa-circle-play"></i> Demo</button>
+          <a href="#" class="inline-flex items-center gap-3 py-3 px-6 rounded-lg font-semibold shadow-lg" style="background:linear-gradient(90deg,var(--cor-1),var(--cor-2));"> <i class="fa-solid fa-circle-play"></i> Ouvir Agora</a>
+          <button class="inline-flex items-center gap-3 py-3 px-6 rounded-lg bg-white/6"> <i class="fa-solid fa-headphones-simple"></i>Crie sua playlist</button>
         </div>
 
         <div class="flex flex-wrap gap-3 mt-2">
@@ -175,13 +176,30 @@
     </section>
 
 
+    <section id="MusicasDoMomento" class="max-w-6xl mx-auto px-6 lg:px-8 py-12">
+      <h2 class="text-2xl font-bold mb-6">Ouça agora as principais músicas do momento</h2>
+
+        <div class="flex flex-col gap-8 md:px-6">
+          <div>
+            <iframe width="100%" height="100%" src="https://w.soundcloud.com/player/?url=https://soundcloud.com/peyruis/swing&color=%23000000" frameborder="0"></iframe>
+          </div>
+          <div>
+            <iframe width="100%" height="100%" src="https://w.soundcloud.com/player/?url=https://soundcloud.com/mbbofficial/destination&color=%23000000" frameborder="0"></iframe>
+          </div>
+          <div>
+            <iframe width="100%" height="100%" src="https://w.soundcloud.com/player/?url=https://soundcloud.com/pyrosion/up-above&color=%23000000" frameborder="0"></iframe>
+          </div>
+        </div>
+    </section>
+
+
     <section id="depoimentos" class="max-w-4xl mx-auto px-6 lg:px-8 py-12">
       <h2 class="text-2xl font-bold mb-6 text-center">O que nossos usuários dizem</h2>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         <blockquote class="p-6 rounded-xl bg-[#18202d]">
           <div class="flex items-center gap-4">
-            <img src="assets/usuario sem foto.jpg" alt="" class="w-12 h-12 rounded-full">
+            <img src="assets/usuario sem foto.jpg" alt="foto usuário" class="w-12 h-12 rounded-full">
             <div>
               <strong>Mariana S.</strong>
               <p class="text-xs text-slate-400">São Paulo, SP</p>
