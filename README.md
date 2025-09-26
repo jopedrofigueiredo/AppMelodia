@@ -1,4 +1,4 @@
-##APP MELODIA
+## APP MELODIA
 Desfrute de áudio em alta fidelidade, crie playlists que combinam com seu humor, descubra talentos emergentes e controle tudo com uma interface intuitiva.
 
 ## Nosso time
@@ -11,3 +11,4 @@ Patrick Canuto - RM 563776
 João Paulo Fernandes - RM 563430
 
 ## Link do Site
+https://jopedrofigueiredo.github.io/AppMelodia/
