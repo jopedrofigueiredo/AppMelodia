@@ -1,28 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>App</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
-    <link href="https://soundcloud.com/musicas-sem-copyright1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Melodia</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
 
-    <style>
-        :root{
-          --cor-1:#6D28D9;
-          --cor-2:#06B6D4; 
-          --cor-3:#FF4D6D; 
-        }
-        html,body{font-family: 'Poppins'}
+  <style>
+    :root{
+      --cor-1:#6D28D9;
+      --cor-2:#06B6D4; 
+      --cor-3:#FF4D6D; 
+    }
+    html,body{font-family: 'Poppins', sans-serif;}
+    iframe { max-width: 100%; width: 100%; border-radius: 0.75rem; }
   </style>
 </head>
 
 <body class="bg-gradient-to-br from-[#121212] via-[#0b1220] to-[#061025] text-[#e2e8f0] antialiased">
 
   <header id="site-header" class="fixed w-full z-40 transition-all duration-300">
-    <nav class="max-w-6xl mx-auto flex items-center justify-between p-4 sm:p-6 rounded-b-2xl shadow-lg">
+    <nav class="max-w-6xl mx-auto flex flex-wrap items-center justify-between p-4 sm:p-6 rounded-b-2xl shadow-lg">
       <a href="#" class="flex items-center gap-3">
         <div class="w-10 h-10 flex items-center justify-center rounded-lg" style="background: linear-gradient(135deg,var(--cor-1),var(--cor-3));">
           <i class="fa-solid fa-music"></i>
@@ -33,45 +33,48 @@
       <ul class="hidden md:flex items-center gap-6 text-sm">
         <li><a href="#apresentacao" class="hover:text-[#fdf2fd]">Diferenciais</a></li>
         <li><a href="#funcionalidades" class="hover:text-[#fdf2fd]">Funcionalidades</a></li>
-        <li><a href="#MusicasDoMomento" class="hover:text-[#fdf2fd]">músicas</a></li>
+        <li><a href="#MusicasDoMomento" class="hover:text-[#fdf2fd]">Músicas</a></li>
         <li><a href="#depoimentos" class="hover:text-[#fdf2fd]">Depoimentos</a></li>
         <li><a href="#contato" class="hover:text-[#fdf2fd]">Contato</a></li>
       </ul>
 
-      <div class="flex items-center gap-3">
-        <a href="#" class="hidden md:inline-block py-2 px-4 rounded-md font-medium text-sm" style="background: linear-gradient(90deg,var(--cor-2),var(--cor-1));">Baixar App</a>
-        <button id="menu-btn" class="md:hidden p-2 rounded-md bg-white/5"></button>
+      <div class="flex items-center gap-3 mt-3 md:mt-0">
+        <a href="#" class="hidden md:inline-block py-2 px-4 rounded-md font-medium text-sm text-white" style="background: linear-gradient(90deg,var(--cor-2),var(--cor-1));">Baixar App</a>
       </div>
     </nav>
   </header>
 
-
   <main class="pt-28">
-    <section class="max-w-6xl mx-auto px-6 lg:px-8 py-12 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
 
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
       <div class="space-y-6">
-        <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight">Melodia: <span class="text-transparent bg-clip-text bg-gradient-to-r from-[var(--cor-3)] to-[var(--cor-2)]">Sua Música, Sua Forma</span></h1>
+        <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight">
+          Melodia: <span class="text-transparent bg-clip-text bg-gradient-to-r from-[var(--cor-3)] to-[var(--cor-2)]">Sua Música, Sua Forma</span>
+        </h1>
         <p class="text-slate-300 max-w-xl">Desfrute de áudio em alta fidelidade, crie playlists que combinam com seu humor, descubra talentos emergentes e controle tudo com uma interface intuitiva.</p>
 
-        <div class="flex gap-4">
-          <a href="#" class="inline-flex items-center gap-3 py-3 px-6 rounded-lg font-semibold shadow-lg" style="background:linear-gradient(90deg,var(--cor-1),var(--cor-2));"> <i class="fa-solid fa-circle-play"></i> Ouvir Agora</a>
-          <button class="inline-flex items-center gap-3 py-3 px-6 rounded-lg bg-white/6"> <i class="fa-solid fa-headphones-simple"></i>Crie sua playlist</button>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="#" class="inline-flex items-center justify-center gap-3 py-3 px-6 rounded-lg font-semibold shadow-lg text-white" style="background:linear-gradient(90deg,var(--cor-1),var(--cor-2));">
+            <i class="fa-solid fa-circle-play"></i> Ouvir Agora
+          </a>
+          <button class="inline-flex items-center justify-center gap-3 py-3 px-6 rounded-lg bg-white/10"> 
+            <i class="fa-solid fa-headphones-simple"></i> Crie sua playlist
+          </button>
         </div>
 
         <div class="flex flex-wrap gap-3 mt-2">
-          <span class="px-3 py-2 rounded-full bg-white/5 text-sm">Qualidade Hi‑Fi</span>
+          <span class="px-3 py-2 rounded-full bg-white/5 text-sm">Qualidade Hi-Fi</span>
           <span class="px-3 py-2 rounded-full bg-white/5 text-sm">Playlists inteligentes</span>
           <span class="px-3 py-2 rounded-full bg-white/5 text-sm">Descubra artistas</span>
         </div>
-
       </div>
 
       <div class="relative">
         <div class="rounded-2xl overflow-hidden shadow-2xl">
-          <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Melodia app" class="w-full h-80 object-cover">
+          <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=1200&auto=format&fit=crop" alt="Melodia app" class="w-full h-auto lg:h-80 object-cover">
         </div>
 
-        <div class="absolute bottom-6 left-6 p-4 rounded-xl bg-[#FFFFFF0F] shadow-md w-60" style="backdrop-filter: blur(5px)">
+        <div class="absolute bottom-6 left-6 p-4 rounded-xl bg-[#FFFFFF0F] shadow-md w-60 max-w-[80%]" style="backdrop-filter: blur(5px)">
           <div class="flex items-center justify-between">
             <div>
               <h3 class="font-semibold">Escute Agora</h3>
@@ -86,32 +89,26 @@
           </div>
         </div>
       </div>
-
     </section>
 
-
-    <section id="apresentacao" class="max-w-6xl mx-auto px-6 lg:px-8 py-12">
+    <section id="apresentacao" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <h2 class="text-2xl font-bold mb-6">Por que escolher o Melodia?</h2>
-
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         <div class="p-6 rounded-xl bg-[#1d2027]">
           <div class="text-4xl mb-4"><i class="fa-solid fa-wave-square"></i></div>
           <h3 class="font-semibold">Qualidade de som superior</h3>
           <p class="text-slate-300 text-sm mt-2">Áudio em alta definição com suporte a formatos lossless e equalização avançada.</p>
         </div>
-
         <div class="p-6 rounded-xl bg-[#1d2027]">
           <div class="text-4xl mb-4"><i class="fa-solid fa-list-check"></i></div>
           <h3 class="font-semibold">Playlists personalizadas</h3>
           <p class="text-slate-300 text-sm mt-2">Algoritmos e controles manuais para criar playlists que combinam com seu gosto e momento.</p>
         </div>
-
         <div class="p-6 rounded-xl bg-[#1d2027]">
           <div class="text-4xl mb-4"><i class="fa-solid fa-search"></i></div>
           <h3 class="font-semibold">Descoberta de novos artistas</h3>
           <p class="text-slate-300 text-sm mt-2">Recomendações curadas e estações de descoberta com talentos emergentes.</p>
         </div>
-
         <div class="p-6 rounded-xl bg-[#1d2027]">
           <div class="text-4xl mb-4"><i class="fa-solid fa-swatchbook"></i></div>
           <h3 class="font-semibold">Interface intuitiva</h3>
@@ -120,14 +117,12 @@
       </div>
     </section>
 
-
-    <section id="funcionalidades" class="max-w-6xl mx-auto px-6 lg:px-8 py-12">
+    <section id="funcionalidades" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <h2 class="text-2xl font-bold mb-6">Funcionalidades</h2>
-
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div class="p-6 rounded-xl bg-gradient-to-r from-white/3 to-white/5 shadow-md">
+        <div class="p-6 rounded-xl bg-gradient-to-r from-white/5 to-white/10 shadow-md">
           <div class="flex items-start gap-4">
-            <div class="text-3xl p-3 rounded-lg" style="background:linear-gradient(135deg,var(--cor-1),var(--cor-2));">
+            <div class="text-3xl p-3 rounded-lg text-white" style="background:linear-gradient(135deg,var(--cor-1),var(--cor-2));">
               <i class="fa-solid fa-sliders"></i>
             </div>
             <div>
@@ -136,10 +131,9 @@
             </div>
           </div>
         </div>
-
-        <div class="p-6 rounded-xl bg-gradient-to-r from-white/3 to-white/5 shadow-md">
+        <div class="p-6 rounded-xl bg-gradient-to-r from-white/5 to-white/10 shadow-md">
           <div class="flex items-start gap-4">
-            <div class="text-3xl p-3 rounded-lg" style="background:linear-gradient(135deg,var(--cor-3),var(--cor-2));">
+            <div class="text-3xl p-3 rounded-lg text-white" style="background:linear-gradient(135deg,var(--cor-3),var(--cor-2));">
               <i class="fa-solid fa-headphones-simple"></i>
             </div>
             <div>
@@ -148,10 +142,9 @@
             </div>
           </div>
         </div>
-
-        <div class="p-6 rounded-xl bg-gradient-to-r from-white/3 to-white/5 shadow-md">
+        <div class="p-6 rounded-xl bg-gradient-to-r from-white/5 to-white/10 shadow-md">
           <div class="flex items-start gap-4">
-            <div class="text-3xl p-3 rounded-lg" style="background:linear-gradient(135deg,var(--cor-2),var(--cor-1));">
+            <div class="text-3xl p-3 rounded-lg text-white" style="background:linear-gradient(135deg,var(--cor-2),var(--cor-1));">
               <i class="fa-solid fa-compact-disc"></i>
             </div>
             <div>
@@ -160,10 +153,9 @@
             </div>
           </div>
         </div>
-
-        <div class="p-6 rounded-xl bg-gradient-to-r from-white/3 to-white/5 shadow-md">
+        <div class="p-6 rounded-xl bg-gradient-to-r from-white/5 to-white/10 shadow-md">
           <div class="flex items-start gap-4">
-            <div class="text-3xl p-3 rounded-lg" style="background:linear-gradient(135deg,var(--cor-1),var(--cor-3));">
+            <div class="text-3xl p-3 rounded-lg text-white" style="background:linear-gradient(135deg,var(--cor-1),var(--cor-3));">
               <i class="fa-solid fa-share-nodes"></i>
             </div>
             <div>
@@ -175,27 +167,17 @@
       </div>
     </section>
 
-
-    <section id="MusicasDoMomento" class="max-w-6xl mx-auto px-6 lg:px-8 py-12">
+    <section id="MusicasDoMomento" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <h2 class="text-2xl font-bold mb-6">Ouça agora as principais músicas do momento</h2>
-
-        <div class="flex flex-col gap-8 md:px-6">
-          <div>
-            <iframe width="100%" height="100%" src="https://w.soundcloud.com/player/?url=https://soundcloud.com/peyruis/swing&color=%23000000" frameborder="0"></iframe>
-          </div>
-          <div>
-            <iframe width="100%" height="100%" src="https://w.soundcloud.com/player/?url=https://soundcloud.com/mbbofficial/destination&color=%23000000" frameborder="0"></iframe>
-          </div>
-          <div>
-            <iframe width="100%" height="100%" src="https://w.soundcloud.com/player/?url=https://soundcloud.com/pyrosion/up-above&color=%23000000" frameborder="0"></iframe>
-          </div>
-        </div>
+      <div class="flex flex-col gap-6">
+        <iframe class="w-full h-52" src="https://w.soundcloud.com/player/?url=https://soundcloud.com/peyruis/swing&color=%23000000" frameborder="0"></iframe>
+        <iframe class="w-full h-52" src="https://w.soundcloud.com/player/?url=https://soundcloud.com/mbbofficial/destination&color=%23000000" frameborder="0"></iframe>
+        <iframe class="w-full h-52" src="https://w.soundcloud.com/player/?url=https://soundcloud.com/pyrosion/up-above&color=%23000000" frameborder="0"></iframe>
+      </div>
     </section>
 
-
-    <section id="depoimentos" class="max-w-4xl mx-auto px-6 lg:px-8 py-12">
+    <section id="depoimentos" class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <h2 class="text-2xl font-bold mb-6 text-center">O que nossos usuários dizem</h2>
-
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         <blockquote class="p-6 rounded-xl bg-[#18202d]">
           <div class="flex items-center gap-4">
@@ -207,7 +189,6 @@
           </div>
           <p class="mt-4 text-slate-300">"A qualidade de som é inacreditável — o modo offline salva minhas viagens!"</p>
         </blockquote>
-
         <blockquote class="p-6 rounded-xl bg-[#18202d]">
           <div class="flex items-center gap-4">
             <img src="assets/usuario sem foto.jpg" alt="" class="w-12 h-12 rounded-full">
@@ -218,7 +199,6 @@
           </div>
           <p class="mt-4 text-slate-300">"Encontrei artistas novos que viraram meus favoritos — recomendação top!"</p>
         </blockquote>
-
         <blockquote class="p-6 rounded-xl bg-[#18202d]">
           <div class="flex items-center gap-4">
             <img src="assets/usuario sem foto.jpg" alt="" class="w-12 h-12 rounded-full">
@@ -231,14 +211,12 @@
         </blockquote>
       </div>
     </section>
-   
 
-    <section id="contato" class="max-w-3xl mx-auto px-6 lg:px-8 py-12">
+    <section id="contato" class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <h2 class="text-2xl font-bold mb-6 text-center">Fique por dentro — cadastre seu e-mail</h2>
-
       <form id="lead-form" class="grid grid-cols-1 gap-4">
         <input type="email" id="email" required placeholder="Seu melhor e-mail" class="p-4 rounded-lg bg-white/5 focus:ring-2 focus:ring-slate-500 outline-none" />
-        <div class="flex gap-3">
+        <div class="flex flex-col sm:flex-row gap-3">
           <input type="text" id="nome" placeholder="Seu nome" class="p-4 rounded-lg bg-white/5 flex-1 outline-none" />
           <select id="interesse" class="p-4 rounded-lg bg-white/5">
             <option value="">Interesse</option>
@@ -250,26 +228,26 @@
           </select>
         </div>
         <div class="flex items-center gap-4">
-          <button type="submit" class="py-3 px-6 rounded-lg font-semibold" style="background:linear-gradient(90deg,var(--cor-2),var(--cor-1));">Enviar</button>
+          <button type="submit" class="py-3 px-6 rounded-lg font-semibold text-white" style="background:linear-gradient(90deg,var(--cor-2),var(--cor-1));">Enviar</button>
           <p id="form-msg" class="text-sm text-slate-400"></p>
         </div>
       </form>
     </section>
+  </main>
 
-
-    <footer class="mt-12 border-t border-white/5 py-8">
-    <div class="max-w-6xl mx-auto px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-4">
+  <footer class="mt-12 border-t border-white/5 py-8">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-4">
       <div class="text-sm text-center">© 2025 Melodia — Todos os direitos reservados • <a href="#" class="underline">Política de Privacidade</a></div>
-
       <div class="flex items-center gap-4">
         <a href="#" aria-label="instagram"><i class="fab fa-instagram"></i></a>
         <a href="#" aria-label="twitter"><i class="fab fa-twitter"></i></a>
         <a href="#" aria-label="facebook"><i class="fab fa-facebook"></i></a>
       </div>
-
-      <div class="text-sm text-slate-400">Contato: contato@melodia.app</div>
-    </div>
+      </div>
   </footer>
+</body>
+</html>
+
 
 
   <script>
@@ -317,6 +295,3 @@
     
 </body>
 </html>
-
-
- <!-- <div><iframe width="100%" height="100%" src="https://w.soundcloud.com/player/?url=https://soundcloud.com/peyruis/swing" frameborder="0"></iframe></div> -->
