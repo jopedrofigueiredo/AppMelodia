@@ -15,7 +15,15 @@
       --cor-3:#FF4D6D; 
     }
     html,body{font-family: 'Poppins', sans-serif;}
-    iframe { max-width: 100%; width: 100%; border-radius: 0.75rem; }
+    iframe { max-width: 100%; 
+             width: 100%; 
+             border-radius: 0.75rem; 
+             opacity: .5;
+             }
+    iframe:hover {
+      opacity: 1;
+      transition: 150ms;
+    }
   </style>
 </head>
 
@@ -170,9 +178,9 @@
     <section id="MusicasDoMomento" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <h2 class="text-2xl font-bold mb-6">Ouça agora as principais músicas do momento</h2>
       <div class="flex flex-col gap-6">
-        <iframe class="w-full h-52" src="https://w.soundcloud.com/player/?url=https://soundcloud.com/peyruis/swing&color=%23000000" frameborder="0"></iframe>
-        <iframe class="w-full h-52" src="https://w.soundcloud.com/player/?url=https://soundcloud.com/mbbofficial/destination&color=%23000000" frameborder="0"></iframe>
-        <iframe class="w-full h-52" src="https://w.soundcloud.com/player/?url=https://soundcloud.com/pyrosion/up-above&color=%23000000" frameborder="0"></iframe>
+        <iframe class="w-full h-52 playermusica" src="https://w.soundcloud.com/player/?url=https://soundcloud.com/peyruis/swing&color=%23000000&backgroundColor=%23000000" frameborder="0"></iframe>
+        <iframe class="w-full h-52 playermusica" src="https://w.soundcloud.com/player/?url=https://soundcloud.com/mbbofficial/destination&color=%23000000" frameborder="0"></iframe>
+        <iframe class="w-full h-52 playermusica" src="https://w.soundcloud.com/player/?url=https://soundcloud.com/pyrosion/up-above&color=%23000000" frameborder="0"></iframe>
       </div>
     </section>
 
